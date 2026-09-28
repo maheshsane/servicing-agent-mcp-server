@@ -1,6 +1,6 @@
 # Servicing Agent MCP Server — Harborstone Mutual Insurance
 
-A Model Context Protocol (MCP) server built for the panel's "The Servicing Agent" scenario: an agentic customer servicing solution combining CRM customer records, Snowflake operational data, policy documents, call transcripts, and prior case notes.
+A Model Context Protocol (MCP) server that shows how a customer-servicing agent can combine CRM customer records, Snowflake operational data, policy documents, call transcripts and prior case notes. All data is synthetic.
 
 **This version deliberately exposes CRM and Snowflake as two separate systems, not one merged view.** `get_crm_account` stands in for a native Salesforce/CRM read — identity, contact info, agent of record. `get_policies_held` and `get_ticket_status` stand in for native Snowflake reads — what the customer owns and what's in flight. The agent has to call across both and reconcile them itself, the same way it would against the real systems, rather than reading from one flattened record.
 
@@ -45,13 +45,13 @@ Open your Claude Desktop config file:
 open ~/Library/Application\ Support/Claude/claude_desktop_config.json
 ```
 
-Add the server config (merge with any existing config):
+Add the server config (merge with any existing config), replacing the path with where you cloned this repo:
 ```json
 {
   "mcpServers": {
     "servicing-agent": {
       "command": "python3",
-      "args": ["/Users/mahesh/servicing-agent-mcp-server/server.py"],
+      "args": ["/ABSOLUTE/PATH/TO/servicing-agent-mcp-server/server.py"],
       "env": {}
     }
   }
@@ -65,7 +65,7 @@ Quit and reopen Claude Desktop. You should see a 🔌 icon or tool count increas
 
 ## MCP Tools Exposed
 
-| Tool | System | Servicing Agent Scenario Mapping |
+| Tool | System | Servicing use case |
 |---|---|---|
 | `get_crm_account` | CRM (Salesforce stand-in) | Customer identity, contact info, agent of record, named insureds |
 | `get_policies_held` | Snowflake | What products/policies the customer holds, coverage limits, premium status |
@@ -84,7 +84,7 @@ Use these in Claude Desktop after connecting the server:
 **Account question + ticket status, combined (CRM + Snowflake reconciliation):**
 > "Pull up Renee Castellano's account and her open tickets — give me a complete picture of where things stand with her water damage claim."
 
-**The cross-product policy gotcha (the strongest one for the panel):**
+**The cross-product policy gotcha (the strongest one to run live):**
 > "Tom Bregman's request to add his daughter as a driver on his auto policy was denied. His driving record and hers are both clean — why would this get denied, and what does he need to do to get it approved?"
 > This one is worth running live. The obvious read is a driver-eligibility problem. The actual answer is on a different policy entirely — his umbrella coverage requires higher underlying auto liability limits once a driver under 25 is added, and his auto policy is below that threshold. The agent has to pull his CRM record, his policies held (both auto and umbrella), the ticket, and the Umbrella Underlying Coverage Requirements document, and reconcile all four to get the real answer.
 
@@ -97,7 +97,7 @@ Use these in Claude Desktop after connecting the server:
 
 **Proactive escalation scan:**
 > "Scan all open tickets and tell me which ones should go to a human instead of being handled by the agent, and why."
-> Expect 4 of 8 open tickets to surface — an SLA breach, a high-value claim in manual underwriting review, and a billing dispute carrying both an SLA breach and negative sentiment history. Closed/resolved tickets are excluded on purpose; a Denied or Paid ticket doesn't need escalation, it needs a policy-grounded explanation if asked about.
+> The scan checks SLA dates against the date you run it, so the count changes over time. When this dataset was built it flagged 4 of the 8 open tickets, and it flags more as SLA dates pass. It flags an SLA breach, a ticket already escalated, a high-value claim in manual underwriting review, or negative sentiment in case history. Closed and resolved tickets are excluded on purpose; a Denied or Paid ticket doesn't need escalation, it needs a policy-grounded explanation if asked about.
 
 **Full servicing walkthrough:**
 > "James O'Connell is worried his theft claim being marked Escalated means it's going to be denied. Pull his account, the claim, and his case history, and tell me what's actually going on and what I should tell him."
@@ -112,4 +112,4 @@ This is the deliberate architectural choice in this version: identity data and o
 
 ## About
 
-Built in response to the "Servicing Agent" scenario prompt for the Salesforce FDE Public Sector panel: design an agentic solution combining structured customer/operational records with policy documents, call transcripts, and case notes, starting from a sponsor conversation about scope through to architecture and KPIs.
+A small reference implementation of a customer-servicing agent over synthetic insurance data. It shows how an agent can reconcile identity data, operational data and written policy, and route risky tickets to a person.
