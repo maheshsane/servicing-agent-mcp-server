@@ -1,0 +1,386 @@
+{
+  "company": "Harborstone Mutual Insurance",
+  "customers": [
+    {
+      "id": "CUST-101",
+      "name": "Renee Castellano",
+      "email": "renee.castellano@example.com",
+      "phone": "555-0101",
+      "mailing_address": "142 Birchwood Ln, Cranston, RI",
+      "agent_of_record": "Dana Ruiz",
+      "customer_since": "2019-03-11",
+      "preferred_contact": "Email",
+      "named_insureds": ["Renee Castellano"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-102",
+      "name": "Tom Bregman",
+      "email": "tbregman@example.com",
+      "phone": "555-0102",
+      "mailing_address": "88 Fenwick Rd, Warwick, RI",
+      "agent_of_record": "Dana Ruiz",
+      "customer_since": "2016-07-22",
+      "preferred_contact": "Phone",
+      "named_insureds": ["Tom Bregman", "Katie Bregman"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-103",
+      "name": "Priya Nair",
+      "email": "priya.nair@example.com",
+      "phone": "555-0103",
+      "mailing_address": "27 Larch Ct, Providence, RI",
+      "agent_of_record": "Marcus Feld",
+      "customer_since": "2023-01-09",
+      "preferred_contact": "Email",
+      "named_insureds": ["Priya Nair"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-104",
+      "name": "Grace Liu",
+      "email": "grace.liu@example.com",
+      "phone": "555-0104",
+      "mailing_address": "5 Tanner St, Pawtucket, RI",
+      "agent_of_record": "Marcus Feld",
+      "customer_since": "2021-05-30",
+      "preferred_contact": "Chat",
+      "named_insureds": ["Grace Liu"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-105",
+      "name": "Elena Vasquez",
+      "email": "elena.vasquez@example.com",
+      "phone": "555-0105",
+      "mailing_address": "310 Ridgeline Dr, Newport, RI",
+      "agent_of_record": "Dana Ruiz",
+      "customer_since": "2014-11-02",
+      "preferred_contact": "Phone",
+      "named_insureds": ["Elena Vasquez", "Carlos Vasquez"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-106",
+      "name": "David Chen",
+      "email": "david.chen@example.com",
+      "phone": "555-0106",
+      "mailing_address": "19 Colonial Ave, East Greenwich, RI",
+      "agent_of_record": "Marcus Feld",
+      "customer_since": "2020-02-14",
+      "preferred_contact": "Email",
+      "named_insureds": ["David Chen"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-107",
+      "name": "Sophia Martins",
+      "email": "sophia.martins@example.com",
+      "phone": "555-0107",
+      "mailing_address": "76 Sequoia Way, Woonsocket, RI",
+      "agent_of_record": "Dana Ruiz",
+      "customer_since": "2024-06-18",
+      "preferred_contact": "Chat",
+      "named_insureds": ["Sophia Martins"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-108",
+      "name": "James O'Connell",
+      "email": "james.oconnell@example.com",
+      "phone": "555-0108",
+      "mailing_address": "201 Harborview Pl, Bristol, RI",
+      "agent_of_record": "Marcus Feld",
+      "customer_since": "2017-09-05",
+      "preferred_contact": "Phone",
+      "named_insureds": ["James O'Connell"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-109",
+      "name": "Angela Brooks",
+      "email": "angela.brooks@example.com",
+      "phone": "555-0109",
+      "mailing_address": "44 Meeting St, Providence, RI",
+      "agent_of_record": "Dana Ruiz",
+      "customer_since": "2018-12-01",
+      "preferred_contact": "Email",
+      "named_insureds": ["Angela Brooks"],
+      "status": "Active"
+    },
+    {
+      "id": "CUST-110",
+      "name": "Ray Whitfield",
+      "email": "ray.whitfield@example.com",
+      "phone": "555-0110",
+      "mailing_address": "63 Quarry Rd, Cumberland, RI",
+      "agent_of_record": "Marcus Feld",
+      "customer_since": "2015-04-27",
+      "preferred_contact": "Phone",
+      "named_insureds": ["Ray Whitfield"],
+      "status": "Lapsed"
+    }
+  ],
+
+  "policies_held": [
+    { "policy_id": "POL-4410", "customer_id": "CUST-101", "product_id": "PROD-HOME", "effective_date": "2024-01-01", "renewal_date": "2027-01-01", "premium_status": "Paid", "coverage_limit": "$350,000 dwelling / $175,000 personal property" },
+    { "policy_id": "POL-4411", "customer_id": "CUST-101", "product_id": "PROD-AUTO", "effective_date": "2023-06-15", "renewal_date": "2026-12-15", "premium_status": "Paid", "coverage_limit": "100/300/100 liability, $500 collision deductible" },
+
+    { "policy_id": "POL-4420", "customer_id": "CUST-102", "product_id": "PROD-AUTO", "effective_date": "2022-03-01", "renewal_date": "2026-09-01", "premium_status": "Paid", "coverage_limit": "100/300/100 liability, $1,000 collision deductible" },
+    { "policy_id": "POL-4421", "customer_id": "CUST-102", "product_id": "PROD-UMBRELLA", "effective_date": "2022-03-01", "renewal_date": "2026-09-01", "premium_status": "Paid", "coverage_limit": "$1,000,000 excess liability" },
+
+    { "policy_id": "POL-4430", "customer_id": "CUST-103", "product_id": "PROD-RENTERS", "effective_date": "2023-02-01", "renewal_date": "2026-08-01", "premium_status": "Paid", "coverage_limit": "$40,000 personal property / $100,000 liability" },
+
+    { "policy_id": "POL-4440", "customer_id": "CUST-104", "product_id": "PROD-AUTO", "effective_date": "2021-08-10", "renewal_date": "2027-02-10", "premium_status": "Paid", "coverage_limit": "100/300/100 liability, $500 collision deductible" },
+
+    { "policy_id": "POL-4450", "customer_id": "CUST-105", "product_id": "PROD-HOME", "effective_date": "2015-01-01", "renewal_date": "2027-01-01", "premium_status": "Paid", "coverage_limit": "$520,000 dwelling / $260,000 personal property" },
+    { "policy_id": "POL-4451", "customer_id": "CUST-105", "product_id": "PROD-UMBRELLA", "effective_date": "2019-01-01", "renewal_date": "2027-01-01", "premium_status": "Paid", "coverage_limit": "$2,000,000 excess liability" },
+
+    { "policy_id": "POL-4460", "customer_id": "CUST-106", "product_id": "PROD-LIFE", "effective_date": "2020-03-01", "renewal_date": "2030-03-01", "premium_status": "Paid", "coverage_limit": "$500,000 term life, 20-year term" },
+
+    { "policy_id": "POL-4470", "customer_id": "CUST-107", "product_id": "PROD-AUTO", "effective_date": "2024-06-20", "renewal_date": "2027-06-20", "premium_status": "Paid", "coverage_limit": "50/100/50 liability, $1,000 collision deductible" },
+
+    { "policy_id": "POL-4480", "customer_id": "CUST-108", "product_id": "PROD-RENTERS", "effective_date": "2017-09-10", "renewal_date": "2026-09-10", "premium_status": "Paid", "coverage_limit": "$75,000 personal property / $100,000 liability" },
+
+    { "policy_id": "POL-4490", "customer_id": "CUST-109", "product_id": "PROD-HOME", "effective_date": "2018-12-05", "renewal_date": "2026-12-05", "premium_status": "Paid", "coverage_limit": "$410,000 dwelling / $205,000 personal property" },
+
+    { "policy_id": "POL-4500", "customer_id": "CUST-110", "product_id": "PROD-AUTO", "effective_date": "2015-05-01", "renewal_date": "2026-11-01", "premium_status": "Past Due", "coverage_limit": "100/300/100 liability, $500 collision deductible" },
+    { "policy_id": "POL-4501", "customer_id": "CUST-110", "product_id": "PROD-UMBRELLA", "effective_date": "2019-05-01", "renewal_date": "2026-11-01", "premium_status": "Past Due", "coverage_limit": "$1,000,000 excess liability" }
+  ],
+
+  "products": [
+    {
+      "id": "PROD-AUTO",
+      "name": "Auto Insurance",
+      "category": "Auto",
+      "guidance": "Covers liability (bodily injury and property damage to others), collision, comprehensive, and uninsured/underinsured motorist. Adding a driver under 25 to a policy increases the risk rating and can trigger minimum liability requirements on related umbrella coverage — see Umbrella Underlying Coverage Requirements. Minimum state-required liability in RI is 25/50/25; Harborstone's standard offering starts at 50/100/50."
+    },
+    {
+      "id": "PROD-HOME",
+      "name": "Homeowners Insurance",
+      "category": "Home",
+      "guidance": "Covers the dwelling, other structures, personal property, loss of use, and personal liability. Harborstone writes on a replacement-cost basis by default (actual cash value is available as a discount option). Named-peril vs. open-peril distinctions matter most for water and earth-movement exclusions — see Homeowners Coverage Terms before quoting a claim."
+    },
+    {
+      "id": "PROD-RENTERS",
+      "name": "Renters Insurance",
+      "category": "Renters",
+      "guidance": "Covers personal property, liability, and additional living expenses if the rental unit becomes uninhabitable. Does not cover the structure itself — that is the landlord's policy. Low-cost add-on; most claims are property theft or liability, not structural."
+    },
+    {
+      "id": "PROD-LIFE",
+      "name": "Term Life Insurance",
+      "category": "Life",
+      "guidance": "Level death benefit for a fixed term (10/20/30 years). Beneficiary changes are a Policy Change Request, not a new application, and take effect on approval with no new underwriting required unless the coverage amount is increasing. Convertible to permanent life within the first 10 years of the term without new medical underwriting."
+    },
+    {
+      "id": "PROD-UMBRELLA",
+      "name": "Umbrella Insurance",
+      "category": "Umbrella",
+      "guidance": "Excess liability coverage above the limits of an underlying auto or homeowners policy, sold in $1M increments. Requires minimum underlying liability limits to stay in force — this is the single most common reason a related auto or home policy-change request gets denied even though the umbrella policy itself isn't being touched. See Umbrella Underlying Coverage Requirements."
+    }
+  ],
+
+  "policy_documents": [
+    {
+      "id": "POLDOC-01",
+      "title": "Auto Coverage Terms",
+      "topic": "Auto Coverage",
+      "text": "Auto policies include liability (bodily injury/property damage), collision, comprehensive, and uninsured/underinsured motorist coverage. Rhode Island's state minimum liability is 25/50/25; Harborstone's standard policies start at 50/100/50. Drivers under 25 added to a policy are rated as higher-risk and may require the household's liability limits to meet minimums set by any attached umbrella policy before the change can be approved."
+    },
+    {
+      "id": "POLDOC-02",
+      "title": "Homeowners Coverage Terms",
+      "topic": "Homeowners Coverage",
+      "text": "Homeowners policies cover the dwelling, other structures, personal property, loss of use, and liability, written on a replacement-cost basis unless actual-cash-value is elected. Water damage from a sudden, accidental source (e.g., a burst pipe) is covered; water damage from gradual seepage or lack of maintenance is excluded. Storm and wind damage to the roof is covered under open-peril terms unless the policy has a separate wind/hail deductible endorsement."
+    },
+    {
+      "id": "POLDOC-03",
+      "title": "Claims Filing & Processing Policy",
+      "topic": "Claims Filing",
+      "text": "Claims must be reported within 30 days of the loss. Standard claims are assigned an adjuster within 5 business days and target resolution within 15 business days of all documentation being received. Any claim with an estimated value over $10,000 is automatically routed to manual underwriting review regardless of policy type, which extends the SLA and is not itself a sign the claim will be denied — it is a routine review step for high-value claims."
+    },
+    {
+      "id": "POLDOC-04",
+      "title": "Cancellation & Refund Policy",
+      "topic": "Cancellation",
+      "text": "Policyholders may cancel with written notice; refunds for prepaid premium are prorated to the cancellation date. Auto and renters policies cancelled mid-term for reasons other than replacement coverage (e.g., moving out of state) are not subject to a short-rate penalty if 15+ days' notice is given. A cancellation request cannot be processed while a claim on that policy is open — the claim must be resolved or the cancellation is held pending closure. Moving to a new state requires a new underwriting review before the old policy can be cancelled, since coverage does not transfer across state lines automatically."
+    },
+    {
+      "id": "POLDOC-05",
+      "title": "Umbrella Underlying Coverage Requirements",
+      "topic": "Umbrella Coverage",
+      "text": "To keep an umbrella policy in force, the underlying auto and/or homeowners liability limits must meet Harborstone's minimum thresholds at all times. Adding a driver under 25 to an underlying auto policy raises the required minimum liability to 250/500/100; if the auto policy is below that threshold, the requested change must be denied until the underlying limits are raised, even though the umbrella policy itself is not the one being modified. This is the most common reason a policy-change request is denied without an obvious reason on the auto policy alone."
+    },
+    {
+      "id": "POLDOC-06",
+      "title": "Billing & Payment Policy",
+      "topic": "Billing",
+      "text": "Premiums are due on the policy's monthly or semi-annual due date. A 10-day grace period applies after the due date before a policy lapses for non-payment. Claims with a date of loss during a lapse are denied for lack of coverage, even if payment is made afterward. A lapsed policy can be reinstated within 30 days of the lapse date by paying the past-due premium in full, but reinstatement is not retroactive — any loss that occurred during the lapse window remains uncovered."
+    }
+  ],
+
+  "tickets": [
+    { "id": "TKT-2201", "customer_id": "CUST-101", "type": "Claim", "status": "Under Review", "submitted_date": "2026-09-10", "sla_due_date": "2026-09-18", "priority": "High", "related_policy_id": "POL-4410", "description": "Water damage, upstairs bathroom pipe burst; adjuster assigned, awaiting inspection report." },
+    { "id": "TKT-2202", "customer_id": "CUST-101", "type": "Policy Change Request", "status": "Approved", "submitted_date": "2026-08-01", "sla_due_date": "2026-08-08", "priority": "Low", "related_policy_id": "POL-4410", "description": "Raise dwelling coverage limit after kitchen renovation." },
+
+    { "id": "TKT-2203", "customer_id": "CUST-102", "type": "Policy Change Request", "status": "Denied", "submitted_date": "2026-09-05", "sla_due_date": "2026-09-10", "priority": "Medium", "related_policy_id": "POL-4420", "description": "Add 17-year-old daughter Katie as a rated driver on the auto policy." },
+    { "id": "TKT-2204", "customer_id": "CUST-102", "type": "Claim", "status": "Paid", "submitted_date": "2026-07-14", "sla_due_date": "2026-07-24", "priority": "Low", "related_policy_id": "POL-4420", "description": "Cracked windshield, comprehensive claim, paid in full." },
+
+    { "id": "TKT-2205", "customer_id": "CUST-103", "type": "Cancellation Request", "status": "Under Review", "submitted_date": "2026-09-19", "sla_due_date": "2026-09-28", "priority": "Medium", "related_policy_id": "POL-4430", "description": "Ending lease, moving out of state, requesting policy cancellation." },
+    { "id": "TKT-2206", "customer_id": "CUST-103", "type": "Billing Dispute", "status": "Escalated", "submitted_date": "2026-09-08", "sla_due_date": "2026-09-15", "priority": "High", "related_policy_id": "POL-4430", "description": "Disputes an early-cancellation fee charged before any cancellation was finalized." },
+
+    { "id": "TKT-2207", "customer_id": "CUST-104", "type": "Billing Dispute", "status": "Approved", "submitted_date": "2026-08-20", "sla_due_date": "2026-08-27", "priority": "Medium", "related_policy_id": "POL-4440", "description": "Duplicate premium charge identified and refunded." },
+    { "id": "TKT-2208", "customer_id": "CUST-104", "type": "Claim", "status": "Submitted", "submitted_date": "2026-09-21", "sla_due_date": "2026-09-30", "priority": "Medium", "related_policy_id": "POL-4440", "description": "Minor parking-lot collision, other party's insurance also involved." },
+
+    { "id": "TKT-2209", "customer_id": "CUST-105", "type": "Claim", "status": "Paid", "submitted_date": "2026-08-01", "sla_due_date": "2026-08-16", "priority": "High", "related_policy_id": "POL-4450", "description": "Roof damage from wind storm, claim approved and paid." },
+    { "id": "TKT-2210", "customer_id": "CUST-105", "type": "Policy Change Request", "status": "Approved", "submitted_date": "2026-06-10", "sla_due_date": "2026-06-17", "priority": "Low", "related_policy_id": "POL-4451", "description": "Increased umbrella coverage from $1M to $2M." },
+
+    { "id": "TKT-2211", "customer_id": "CUST-106", "type": "Policy Change Request", "status": "Approved", "submitted_date": "2026-09-02", "sla_due_date": "2026-09-09", "priority": "Low", "related_policy_id": "POL-4460", "description": "Beneficiary update on term life policy following marriage." },
+
+    { "id": "TKT-2212", "customer_id": "CUST-107", "type": "Claim", "status": "Submitted", "submitted_date": "2026-09-22", "sla_due_date": "2026-09-29", "priority": "Medium", "related_policy_id": "POL-4470", "description": "Fender bender in a parking garage, other driver at fault, police report filed." },
+    { "id": "TKT-2213", "customer_id": "CUST-107", "type": "Cancellation Request", "status": "Under Review", "submitted_date": "2026-09-15", "sla_due_date": "2026-10-01", "priority": "Medium", "related_policy_id": "POL-4470", "description": "Switching carriers at renewal, requesting cancellation effective renewal date." },
+
+    { "id": "TKT-2214", "customer_id": "CUST-108", "type": "Claim", "status": "Escalated", "submitted_date": "2026-09-06", "sla_due_date": "2026-09-20", "priority": "High", "related_policy_id": "POL-4480", "estimated_value": 18500, "description": "Reported theft of personal property from storage unit; estimated loss exceeds $10,000 and is in manual underwriting review." },
+    { "id": "TKT-2215", "customer_id": "CUST-108", "type": "Cancellation Request", "status": "Denied", "submitted_date": "2026-09-12", "sla_due_date": "2026-09-19", "priority": "Medium", "related_policy_id": "POL-4480", "description": "Requested cancellation while TKT-2214 theft claim is still open; held per policy until claim resolves." },
+
+    { "id": "TKT-2216", "customer_id": "CUST-109", "type": "Cancellation Request", "status": "Under Review", "submitted_date": "2026-09-14", "sla_due_date": "2026-10-05", "priority": "Medium", "related_policy_id": "POL-4490", "description": "Moving out of state next month, requires new-state underwriting before old policy cancels." },
+    { "id": "TKT-2217", "customer_id": "CUST-109", "type": "Billing Dispute", "status": "Approved", "submitted_date": "2026-08-25", "sla_due_date": "2026-09-01", "priority": "Low", "related_policy_id": "POL-4490", "description": "Questioned a premium increase at renewal; confirmed as a statewide rate filing change, not a billing error." },
+
+    { "id": "TKT-2218", "customer_id": "CUST-110", "type": "Claim", "status": "Denied", "submitted_date": "2026-09-11", "sla_due_date": "2026-09-18", "priority": "High", "related_policy_id": "POL-4500", "description": "Fender bender claim denied — date of loss fell during a premium-lapse window past the grace period." }
+  ],
+
+  "case_history": [
+    {
+      "id": "CASE-3301",
+      "customer_id": "CUST-101",
+      "related_ticket_id": "TKT-2201",
+      "channel": "Call",
+      "date": "2026-09-15",
+      "sentiment": "Neutral",
+      "transcript": "Agent: Thanks for calling Harborstone, this is Dana. How can I help?\nCustomer: Hi, I'm calling about my water damage claim, it's been almost a week.\nAgent: Let me pull that up — TKT-2201, pipe burst in the upstairs bathroom. I can see the adjuster was assigned on the 12th and the site inspection is scheduled.\nCustomer: Do you know when I'll hear back?\nAgent: The inspection report is due in by end of week, and once that's in we typically finalize within a couple business days. I'll flag it so you get a call the moment the report lands.\nCustomer: Okay, appreciate it.",
+      "case_note": "Confirmed adjuster inspection scheduled; advised customer report expected end of week. No coverage question raised."
+    },
+    {
+      "id": "CASE-3302",
+      "customer_id": "CUST-102",
+      "related_ticket_id": "TKT-2203",
+      "channel": "Call",
+      "date": "2026-09-06",
+      "sentiment": "Neutral",
+      "transcript": "Agent: Harborstone customer service, this is Marcus.\nCustomer: I'm confused — I asked to add my daughter to my auto policy and got a denial letter. Nothing's wrong with my driving record, why would this get denied?\nAgent: I understand the confusion. Let me look at the full picture, not just the auto policy — you also carry a $1M umbrella policy, is that right?\nCustomer: Yes, had that for years.\nAgent: That's the reason. Adding a driver under 25 raises the minimum underlying liability required to keep the umbrella policy in force, to 250/500/100. Your auto policy is currently at 100/300/100, which is below that threshold, so the system holds the change until the auto limits are raised.\nCustomer: So it's not about her driving, it's about my umbrella coverage?\nAgent: Exactly — nothing about her application was the issue. If you'd like, I can submit a request to raise your auto liability limits first, and then resubmit the driver addition right after. That would clear it.\nCustomer: Yes, please do that.",
+      "case_note": "Explained denial is driven by Umbrella Underlying Coverage Requirements (POLDOC-05), not the driver application itself. Customer wants a follow-up request to raise auto liability limits, then resubmit driver addition."
+    },
+    {
+      "id": "CASE-3303",
+      "customer_id": "CUST-103",
+      "related_ticket_id": "TKT-2206",
+      "channel": "Call",
+      "date": "2026-09-09",
+      "sentiment": "Negative",
+      "transcript": "Agent: Harborstone customer service.\nCustomer: This is my second call about this. I was charged an early-cancellation fee and I haven't even cancelled yet, I just asked about it.\nAgent: I'm sorry about the back and forth. Let me check your account... I see the cancellation request is still Under Review, it hasn't been finalized, and I do see a fee was charged on the 8th.\nCustomer: Right, that's the problem. Can someone actually look into why that happened before it was even approved?\nAgent: That does look like it was charged in error given the request isn't finalized. I'm going to escalate this to billing directly rather than have you call a third time.",
+      "case_note": "Fee appears to have been charged in error prior to cancellation finalization. Second contact on this issue — escalating to billing team rather than routing back through standard queue."
+    },
+    {
+      "id": "CASE-3304",
+      "customer_id": "CUST-103",
+      "related_ticket_id": "TKT-2206",
+      "channel": "Email",
+      "date": "2026-09-12",
+      "sentiment": "Negative",
+      "transcript": null,
+      "case_note": "Customer emailed again asking for a timeline on the fee reversal, no response yet from billing team. Third contact on the same issue."
+    },
+    {
+      "id": "CASE-3305",
+      "customer_id": "CUST-104",
+      "related_ticket_id": "TKT-2207",
+      "channel": "Call",
+      "date": "2026-08-22",
+      "sentiment": "Positive",
+      "transcript": "Agent: Hi, this is Marcus with Harborstone.\nCustomer: I noticed I was charged twice this month for my auto premium.\nAgent: Let me check... you're right, there's a duplicate charge on the 5th and the 19th. I can refund the duplicate right now.\nCustomer: Oh great, that was fast.\nAgent: Refund's processed, you'll see it in 3-5 business days. Sorry for the trouble.",
+      "case_note": "Duplicate premium charge confirmed and refunded same call."
+    },
+    {
+      "id": "CASE-3306",
+      "customer_id": "CUST-105",
+      "related_ticket_id": "TKT-2209",
+      "channel": "Call",
+      "date": "2026-08-14",
+      "sentiment": "Positive",
+      "transcript": "Agent: Harborstone, this is Dana.\nCustomer: Calling about the roof claim from the storm last month.\nAgent: Good news — that claim was approved and payment was issued on the 14th, should already be in your account.\nCustomer: It is, thank you, that was quick.\nAgent: Glad to hear it. Anything else I can help with today?\nCustomer: No, that's all.",
+      "case_note": "Confirmed claim payment received by customer, no follow-up needed."
+    },
+    {
+      "id": "CASE-3307",
+      "customer_id": "CUST-106",
+      "related_ticket_id": "TKT-2211",
+      "channel": "Email",
+      "date": "2026-09-03",
+      "sentiment": "Neutral",
+      "transcript": null,
+      "case_note": "Confirmed beneficiary update approved and effective immediately; no new underwriting required since coverage amount unchanged."
+    },
+    {
+      "id": "CASE-3308",
+      "customer_id": "CUST-107",
+      "related_ticket_id": "TKT-2212",
+      "channel": "Chat",
+      "date": "2026-09-22",
+      "sentiment": "Neutral",
+      "transcript": null,
+      "case_note": "Confirmed claim submission received, police report on file, standard 5-business-day adjuster assignment timeline communicated."
+    },
+    {
+      "id": "CASE-3309",
+      "customer_id": "CUST-108",
+      "related_ticket_id": "TKT-2214",
+      "channel": "Call",
+      "date": "2026-09-10",
+      "sentiment": "Neutral",
+      "transcript": "Agent: Harborstone, this is Marcus.\nCustomer: I'm checking on my theft claim, it says Escalated and I'm worried that means it's going to be denied.\nAgent: Totally understandable, but Escalated here doesn't mean denial — your claim's estimated value is over $10,000, so it's automatically routed to manual underwriting review, that's standard for any high-value claim regardless of type.\nCustomer: So it's not that anything looks wrong with it?\nAgent: Correct, nothing about your claim triggered concern — it's purely the dollar threshold. Manual review typically adds a few extra business days.\nCustomer: Okay, that's a relief, thank you.",
+      "case_note": "Clarified Escalated status is due to $10k+ manual review threshold (POLDOC-03), not a red flag on the claim itself."
+    },
+    {
+      "id": "CASE-3310",
+      "customer_id": "CUST-108",
+      "related_ticket_id": "TKT-2215",
+      "channel": "Email",
+      "date": "2026-09-13",
+      "sentiment": "Neutral",
+      "transcript": null,
+      "case_note": "Explained cancellation request is held per Cancellation & Refund Policy while the theft claim (TKT-2214) remains open; will process once claim is resolved."
+    },
+    {
+      "id": "CASE-3311",
+      "customer_id": "CUST-109",
+      "related_ticket_id": "TKT-2216",
+      "channel": "Call",
+      "date": "2026-09-14",
+      "sentiment": "Neutral",
+      "transcript": "Agent: Harborstone, this is Dana.\nCustomer: I'm moving out of state next month, I assumed I could just cancel my homeowners policy here.\nAgent: You can, but since you're moving out of state, we can't just transfer this policy — home insurance is state-specific, so you'll need a new policy underwritten in your new state first. Once that's active, we'll cancel this one and prorate your refund.\nCustomer: Got it, so I should start that process now rather than waiting until I move.\nAgent: Exactly, that avoids any coverage gap.",
+      "case_note": "Explained new-state underwriting requirement before old policy can be cancelled per Cancellation & Refund Policy; advised starting new-state application now."
+    },
+    {
+      "id": "CASE-3312",
+      "customer_id": "CUST-109",
+      "related_ticket_id": "TKT-2217",
+      "channel": "Email",
+      "date": "2026-08-26",
+      "sentiment": "Neutral",
+      "transcript": null,
+      "case_note": "Confirmed premium increase was a statewide rate filing change effective this renewal cycle, not an account-specific billing error."
+    },
+    {
+      "id": "CASE-3313",
+      "customer_id": "CUST-110",
+      "related_ticket_id": "TKT-2218",
+      "channel": "Call",
+      "date": "2026-09-16",
+      "sentiment": "Negative",
+      "transcript": "Agent: Harborstone, this is Marcus.\nCustomer: I don't understand how my claim got denied, I've paid this policy for eleven years.\nAgent: I hear you, let me look at the dates closely. Your date of loss was September 3rd. Your premium due date was August 20th, with a 10-day grace period ending August 30th. The payment on file wasn't received until September 5th.\nCustomer: So it lapsed for five days and that's it?\nAgent: That's right — under the Billing & Payment Policy, a loss that occurs during a lapse isn't covered even if payment is made afterward, and reinstatement isn't retroactive. I know that's a hard one to hear given your tenure with us.\nCustomer: This feels really unfair after eleven years.\nAgent: I understand the frustration completely. I can't override the coverage-gap rule myself, but I can flag this for a supervisor to review given your account history, if you'd like.\nCustomer: Yes, please do that.",
+      "case_note": "Denial confirmed correct per Billing & Payment Policy (POLDOC-06) — date of loss fell within lapse window past grace period. Customer very unhappy given 11-year tenure; flagged for supervisor review per customer request."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "servicing-agent": {
+      "command": "python3",
+      "args": ["/Users/mahesh/servicing-agent-mcp-server/server.py"],
+      "env": {}
+    }
+  }
+}
